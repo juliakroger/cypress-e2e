@@ -9,7 +9,7 @@ describe('Currency Exchange Test', () => {
 		cy.get('#pay_bills_tab').click()
 		cy.contains('Purchase Foreign Currency').click()
 		cy.get('#pc_currency').select('AUD')
-		cy.get('#pc_amount').type('100', { delay: 50 })
+		cy.get('#pc_amount').type('100', { delay: 10 })
 		cy.get('#pc_inDollars_true').click()
 		cy.get('#pc_calculate_costs').click()
 	})
